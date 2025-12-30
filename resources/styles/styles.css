@@ -260,3 +260,11 @@ p>span a {
     max-width: 150px; /* ajusta a gusto */
     bottom: 0;
 }
+.socials{
+    height: 40px;
+    width: 40px;
+    transition: transform .4s;
+    &:hover{
+        transform: scale(1.3);
+    }
+}
