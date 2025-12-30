@@ -1,0 +1,262 @@
+/* Cambios básicos a elementos */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Jost';
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #f5f7f9;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Cambios a elementos con clases propias*/
+.navbar {
+    background-color: #bcd3b7;
+    max-height: 6.5vh;
+}
+
+.navmenu {
+    display: inline-flex !important;
+}
+
+.col>img {
+    max-width: 20%;
+}
+
+.navmenu>li {
+    font-family: 'Jost';
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 5%;
+}
+
+.navmenu>li a {
+    color: white;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.navmenu>li a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+/* Video y contenido */
+header {
+    position: relative;
+    background-color: black;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Separadores */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #bcd3b7;
+    margin: 0 10px;
+}
+
+.separator span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #bcd3b7;
+    border-radius: 50%;
+}
+
+.visibility {
+    max-width: 40% !important;
+}
+
+p>span {
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p>span a {
+    color: #bcd3b7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.servicios {
+    background-color: #8fcab1;
+    color: white;
+}
+
+.servicios h2,
+.servicios h4 {
+    font-weight: bolder;
+}
+
+.servicios p {
+    font-size: 20px;
+}
+
+#conexion-container {
+    overflow: visible;
+    /* Para que las líneas no se corten */
+}
+
+.img-fluid {
+    position: relative;
+    z-index: 1000;
+    /* Imágenes por encima de la línea si quieres, o debajo */
+}
+
+#conexion-container {
+    position: relative;
+    overflow: visible;
+    /* Muy importante para que las líneas no se corten */
+    height: auto;
+    /* **Añade una altura mínima** o usa `height: auto;
+	` */
+}
+
+.dudas {
+    color: #8fcab1;
+}
+
+.acordeon {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.accordion-item .accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-item .accordion-button {
+    font-size: 30px;
+    padding: 20px 25px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.accordion-item .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #8fcab1;
+}
+
+.accordion-item .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.accordion-item .accordion-button::after {
+    background-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.accordion-item .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item .accordion-body {
+    padding: 25px;
+    background-color: #fff;
+}
+
+.borrmat {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ecosistemas {
+    width: 50%;
+}
+
+.clientes {
+    color: #dac69a;
+}
+
+.clientes_img {
+    width: 40%;
+}
+
+.parallax_container {
+    background-image: url('../img/parallax.png');
+    min-height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax_container {
+    position: relative;
+    padding-bottom: 2rem; /* aire para que no choque */
+}
+
+.footer-logo {
+    position: absolute;
+    left: 1.5rem;     /* margen izquierdo */
+    max-width: 150px; /* ajusta a gusto */
+    bottom: 0;
+}

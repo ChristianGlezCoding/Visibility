@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- @TODO
+CAMBIA LAS IMAGENES A .WEBP
+EL TITULO ES DEMASIADO LARGO
+USAR MAS DE UNA FUENTE PARA TITULOS / CONTENIDO
+EN EL NAV NO USES MAS DE DOS PALABRAS
+NO PONGAS LINKS A VIDEOS DE YOUTUBE!!
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="./resources/js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid navbar d-block w-100 m-0 sticky-top">
+        <div class="row m-0">
+            <div class="col">
+                <img src="./resources/img/logo.png" alt="Visibility" class="img  float-start">
+            </div>
+            <div class="col text-center">
+                <ul class="navmenu align-middle">
+                    <li>
+                        <h5>
+                            <a href="">Contacto</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="">Servicios</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="">¿Dudas?</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="">Ecosistema</a>
+                        </h5>
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="">Clientes</a>
+                        </h5>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0">
+                <header>
+                    <!-- Este div crea un overlay oscuro para no crear contraste con el texto que este encima -->
+                    <div class="overlay"></div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="./resources/videos/video.mp4" type="video/mp4">
+                    </video>
+                    <div class="container h-100">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white">
+                                <h1 class="display-3"> Tu agencia de marketing <br>automation</h1>
+                                <!--Por si queremos añadir algo debajo del titulo-->
+                                <p class="lead mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="separator">
+        <span></span>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="m-3">Queremos ser tu partner digital de confianza </h2>
+                <br>
+                <p class="text-center">
+                    <span>Convierte cada contacto en una relación sólida con nuestra estrategia de marketing,
+                        comunicación y
+                        activación digital.</span><br><br>
+                    <span>Hacemos crecer tu negocio y te ayudamos a captar clientes, nutrir relaciones y fidelizar a
+                        quienes
+                        ya confían en ti, como si fuésemos parte de tu equipo.</span><br><br>
+                    <span class="d-1">¿Quieres que evaluemos tu proyecto y cómo potenciar tu visibilidad?</span> ¿Tienes
+                    preguntas o quieres que
+                    exploremos posibilidades juntos?</span><br><br>
+                    <span>Déjanos tus datos en el formulario o escríbenos a <a
+                            href="mailto:visibility@borrmart.es">visibility@borrmart.es</a> y contactaremos contigo
+                        para generar tu impacto positivo.</span><br><br>
+                <h3>Ahora es <br> #MomentoDeQueTeVean</h3>
+                </p>
+                <img src="./resources/img/visibility.png" alt="Visibility" class="img-fluid visibility">
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 mt-3">
+        <div class="row d-flex servicios">
+            <div class="p-3 text-center">
+                <h2>Servicios que impulsan la relación con tus clientes</h2>
+            </div>
+            <div id="conexion-container" style="position: relative;">
+                <svg id="svg-canvas"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999;">
+                    <path id="linea-unica" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="5,5" />
+                </svg>
+                <div class="row">
+                    <div class="col d-flex flex-row-reverse pr-1">
+                        <img id="img-creativos" src="./resources/img/creativos.png" alt="Creativos" class="img-fluid">
+                    </div>
+                    <div class="col align-middle pt-5">
+                        <h4>Somos creativos</h4>
+                        <p>Storytelling | Creatividad | Contenido</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col pt-5 text-end">
+                        <h4>Somos digitales</h4>
+                        <p>Analítica y capacitación Digital | Estrategia | Redes sociales</p>
+                    </div>
+                    <div class="col">
+                        <img id="img-digitales" src="./resources/img/digitales.png" alt="Digitales" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex flex-row-reverse pr-1">
+                        <img id="img-tecnologicos" src="./resources/img/tecnologicos.png" alt="Tecnológicos"
+                            class="img-fluid">
+                    </div>
+                    <div class="col align-middle pt-5">
+                        <h4>Somos tecnológicos</h4>
+                        <p>Marketing Automation | CRM | E-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 ">
+            <div class="row">
+                <h2 class="text-center dudas">¿Tienes dudas?</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 acordeon ">
+        <div class="accordion" id="sleekAccordion">
+            <div class="accordion-item text-center ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Trabajáis con pymes sin equipo interno?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#sleekAccordion">
+                    <div class="accordion-body">
+                        Sí, nos integramos o directamente nos convertimos en tu equipo de marketing.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Necesito herramientas o conocimientos técnicos?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#sleekAccordion">
+                    <div class="accordion-body">
+                        No, nosotros nos encargamos de todo y te explicamos lo importante.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cuándo veré los resultados?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#sleekAccordion">
+                    <div class="accordion-body">
+                        Desde el principio. Te mostramos resultados con datos claros y sin tecnicismos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Hay permanencia?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#sleekAccordion">
+                    <div class="accordion-body">
+                        Queremos relaciones a largo plazo, no ataduras. Si no ves valor, paramos. Así de simple.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid mt-5" style="background-color:#DAC69A">
+        <div class="row">
+            <div class="col text-center" style="color: white;">
+                <h2 class="pt-5">
+                    Queremos ser tu partner digital de confianza
+                </h2>
+                <p class="borrmat pb-5">
+                    Como agencia digital del Grupo Borrmart, combinamos experiencia, datos y creatividad para crecer con
+                    cabeza
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 text-center">
+        <div class="row">
+            <div class="col">
+                <h2 class=" dudas">Trabajamos con</h2>
+            </div>
+        </div>
+        <div class="row ecosistemas m-auto mt-3">
+            <img src="./resources/img/trabajamos1.png" alt="Tecnologias" class="img-fluid">
+        </div>
+        <div class="row ecosistemas m-auto mt-5">
+            <img src="./resources/img/trabajamos2.png" alt="Tecnologias" class="img-fluid">
+        </div>
+    </div>
+    <div class="separator">
+        <span></span>
+    </div>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <h2 class="clientes">Nuestros clientes</h2>
+            </div>
+        </div>
+        <div class="row clientes_img m-auto">
+            <img src="./resources/img/clientes1.png" alt="Clientes" class="img-fluid">
+        </div>
+        <div class="row clientes_img m-auto mt-5">
+            <img src="./resources/img/clientes2.png" alt="Clientes" class="img-fluid">
+        </div>
+    </div>
+    <footer>
+    <div class="container-fluid parallax_container">
+        <div class="row justify-content-center text-center">
+
+            <div class="col col-md-4 d-flex align-items-end justify-content-start pb-4">
+                <img src="./resources/img/visibility.png"
+                     alt="Visibility"
+                     class="img-fluid">
+            </div>
+
+            <div class="col col-md-4 mt-5">
+                <h2 class="text-white">Ya te están mirando,</h2>
+                <h2 class="text-white">Ahora es momento de que te vean</h2>
+                <p class="text-white">
+                    Impulsa tu impacto positivo
+                </p>
+            </div>
+
+            <div class="col col-md-4 mt-5">
+                <h2 class="text-white">Nuestras redes</h2>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
