@@ -243,7 +243,7 @@ p>span a {
 
 .parallax_container {
     background-image: url('../img/parallax.png');
-    min-height: 20vh;
+    min-height: 15vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
